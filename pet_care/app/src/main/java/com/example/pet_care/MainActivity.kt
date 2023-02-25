@@ -24,9 +24,11 @@ class MainActivity : AppCompatActivity() {
         // val myToast = Toast.makeText(this, message, duration);
         val email = email_input.text.toString()
         val password = password_input.text.toString()
-        if (email == "fenya2011@mail.ru" && password == "good1402") {
-            val entryToast = Toast.makeText(this, "Успех", Toast.LENGTH_SHORT)
-            entryToast.show()
+        if (email == "fenya@mail.ru" && password == "good") {
+//            val entryToast = Toast.makeText(this, "Успех", Toast.LENGTH_SHORT)
+//            entryToast.show()
+            val lkIntent = Intent(this, LkActivity::class.java)
+            startActivity(lkIntent)
         } else {
             val entryToast = Toast.makeText(this, "Нет такого пользователя", Toast.LENGTH_SHORT)
             entryToast.show()
