@@ -1,12 +1,17 @@
 package com.example.pet_care
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
+import android.graphics.BitmapFactory
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import java.io.FileNotFoundException
+import java.io.InputStream
+
 
 class SignUp : AppCompatActivity() {
 
@@ -15,6 +20,8 @@ class SignUp : AppCompatActivity() {
     private lateinit var password_input: EditText
     private lateinit var name_input: EditText
     private lateinit var sername_input: EditText
+
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,7 +32,10 @@ class SignUp : AppCompatActivity() {
         password_input = findViewById(R.id.password_input)
         name_input = findViewById(R.id.name_input)
         sername_input = findViewById(R.id.sername_input)
+
     }
+
+
 
     fun clickSignin(view: View) {
         val inIntent = Intent(this, MainActivity::class.java)

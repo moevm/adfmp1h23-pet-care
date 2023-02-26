@@ -201,4 +201,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_page" />
 
+    <Button
+        android:id="@+id/photo_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="@color/darck_blue"
+        android:onClick="clickFoto"
+        android:text="Сменить аву"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/exit_lk"
+        app:layout_constraintTop_toBottomOf="@+id/home_page" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
