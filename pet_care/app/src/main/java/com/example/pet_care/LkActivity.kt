@@ -74,4 +74,14 @@ class LkActivity : AppCompatActivity() {
         val petsIntent = Intent(this, PetsActivity::class.java)
         startActivity(petsIntent)
     }
+
+    fun myCare(view: View) {
+        val myCareIntent = Intent(this, MyCareActivity::class.java)
+        startActivity(myCareIntent)
+    }
+
+    fun favorite(view: View) {
+        val favoriteIntent = Intent(this, FavoriteActivity::class.java)
+        startActivity(favoriteIntent)
+    }
 }
