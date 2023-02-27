@@ -69,4 +69,9 @@ class LkActivity : AppCompatActivity() {
         nameField.setText(name + " " + sername)
         count_donation.setText("0 руб.")
     }
+
+    fun movePage(view: View) {
+        val petsIntent = Intent(this, PetsActivity::class.java)
+        startActivity(petsIntent)
+    }
 }
