@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     tools:context=".MyCareActivity">
 
+    <ImageView
+        android:id="@+id/imgBack2"
+        android:layout_width="310dp"
+        android:layout_height="356dp"
+        android:alpha="0.20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
     <Button
         android:id="@+id/addPet"
         android:layout_width="260dp"
@@ -36,17 +47,6 @@
         app:srcCompat="?attr/actionModeCloseDrawable"
         app:tint="@color/black"
         tools:ignore="SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/imgBack2"
-        android:layout_width="310dp"
-        android:layout_height="356dp"
-        android:alpha="0.20"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo" />
 
     <View
         android:id="@+id/view5"
@@ -132,6 +132,17 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/petIcon"
         app:layout_constraintTop_toBottomOf="@+id/petAge" />
+
+    <TextView
+        android:id="@+id/go_to4"
+        android:layout_width="372dp"
+        android:layout_height="103dp"
+        android:contentDescription="@android:string/no"
+        android:onClick="goToPetProfile"
+        app:layout_constraintBottom_toBottomOf="@+id/petCare"
+        app:layout_constraintEnd_toEndOf="@+id/petAge"
+        app:layout_constraintStart_toStartOf="@+id/petIcon"
+        app:layout_constraintTop_toTopOf="@+id/petName" />
 
     <ImageButton
         android:id="@+id/butShare"

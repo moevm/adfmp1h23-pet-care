@@ -19,4 +19,14 @@ class MyCareActivity : AppCompatActivity() {
         val petsIntent = Intent(this, PetsActivity::class.java)
         startActivity(petsIntent)
     }
+
+    fun goToPetProfile(view: View){
+        when(view.id){
+            R.id.go_to4->{
+                val petProfileIntent = Intent(this, PetProfileActivity::class.java)
+                petProfileIntent.putExtra(PetProfileActivity.petId, 1)
+                startActivity(petProfileIntent)
+            }
+        }
+    }
 }

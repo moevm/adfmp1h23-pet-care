@@ -35,7 +35,6 @@
         android:layout_height="50dp"
         android:backgroundTint="@color/white"
         android:contentDescription="@android:string/no"
-        android:onClick="clickReturn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/favorite_icon"
