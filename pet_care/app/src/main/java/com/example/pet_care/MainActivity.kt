@@ -48,16 +48,4 @@ class MainActivity : AppCompatActivity() {
         val upIntent = Intent(this, SignUp::class.java)
         startActivity(upIntent)
     }
-//    fun randomMe (view: View) {
-//// Create an Intent to start the second activity
-//        val randomIntent = Intent(this, SecondActivity::class.java)
-//// Get the current value of the text view.
-//        val countString = textView.text.toString()
-////Convert the count to an int
-//        val count = Integer.parseInt(countString)
-//// Add the count to the extras for the Intent.
-//        randomIntent.putExtra(SecondActivity.TOTAL_COUNT, count)
-//// Start the new activity.
-//        startActivity(randomIntent)
-//    }
 }
