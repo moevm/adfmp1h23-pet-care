@@ -19,6 +19,13 @@
             android:name=".MyCareActivity"
             android:exported="false" />
         <activity
+            android:name=".pay"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".SignUp"
             android:exported="false">
             <meta-data
