@@ -27,7 +27,11 @@ class MainActivity : AppCompatActivity() {
         val email = email_input.text.toString()
         val password = password_input.text.toString()
         if (email == "fenya@mail.ru" && password == "good") {
+            val name = "Варя"
+            val sername = "Иванова"
             val lkIntent = Intent(this, LkActivity::class.java)
+            lkIntent.putExtra(LkActivity.name, name)
+            lkIntent.putExtra(LkActivity.sername, sername)
             startActivity(lkIntent)
         } else {
             val entryToast = Toast.makeText(this, "Нет такого пользователя", Toast.LENGTH_SHORT)

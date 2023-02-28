@@ -67,7 +67,11 @@ class LkActivity : AppCompatActivity() {
         val name = intent.getStringExtra(name)
         val sername = intent.getStringExtra(sername)
         nameField.setText(name + " " + sername)
-        count_donation.setText("0 руб.")
+        if(name == "Варя" && sername == "Иванова"){
+            count_donation.setText("45000 руб.")
+        }else{
+            count_donation.setText("0 руб.")
+        }
     }
 
     fun movePage(view: View) {
@@ -83,5 +87,10 @@ class LkActivity : AppCompatActivity() {
     fun favorite(view: View) {
         val favoriteIntent = Intent(this, FavoriteActivity::class.java)
         startActivity(favoriteIntent)
+    }
+
+    fun exitLk(view: View) {
+        val inIntent = Intent(this, MainActivity::class.java)
+        startActivity(inIntent)
     }
 }
