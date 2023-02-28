@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransactionsActivity">
+
+    <ImageView
+        android:id="@+id/imgBack2"
+        android:layout_width="310dp"
+        android:layout_height="356dp"
+        android:alpha="0.20"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <ImageButton
+        android:id="@+id/return_entry5"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@android:string/no"
+        android:onClick="clickReturn"
+        android:paddingStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="@color/black"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/titleMyCare2"
+        android:layout_width="216dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/asap_bold"
+        android:text="История операций"
+        android:textAlignment="center"
+        android:textColor="@color/darck_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/isCare"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:checked="true"
+        android:text="Опека"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleMyCare2" />
+
+    <CheckBox
+        android:id="@+id/isDonat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:checked="true"
+        android:text="Донат"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/isCare"
+        app:layout_constraintTop_toBottomOf="@+id/titleMyCare2" />
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="368dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/light_gray"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/isDonat" />
+
+    <TextView
+        android:id="@+id/info1"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Опека над дикобразом Жорой от 25.01.2023 на сумму 18 000 руб."
+        android:textColor="@color/darck_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView" />
+
+    <View
+        android:id="@+id/view5"
+        android:layout_width="368dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info1" />
+
+    <TextView
+        android:id="@+id/info2"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Донат филину Степану от 12.01.2023 на сумму 1 000 руб."
+        android:textColor="@color/darck_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view5" />
+
+    <View
+        android:id="@+id/view6"
+        android:layout_width="368dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info2" />
+
+    <TextView
+        android:id="@+id/info3"
+        android:layout_width="368dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:text="Донат фенеку Графу от 12.01.2023 на сумму 2 000 руб."
+        android:textColor="@color/darck_blue"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view6" />
+
+    <View
+        android:id="@+id/view7"
+        android:layout_width="368dp"
+        android:layout_height="4dp"
+        android:layout_marginTop="8dp"
+        android:background="#EBEBEB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/info3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

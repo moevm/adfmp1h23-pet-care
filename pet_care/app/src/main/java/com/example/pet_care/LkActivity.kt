@@ -89,6 +89,11 @@ class LkActivity : AppCompatActivity() {
         startActivity(favoriteIntent)
     }
 
+    fun transactions(view: View) {
+        val transIntent = Intent(this, TransactionsActivity::class.java)
+        startActivity(transIntent)
+    }
+
     fun exitLk(view: View) {
         val inIntent = Intent(this, MainActivity::class.java)
         startActivity(inIntent)
