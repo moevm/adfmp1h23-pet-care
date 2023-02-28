@@ -12,6 +12,7 @@ class FavoriteActivity : AppCompatActivity() {
     }
 
     fun clickReturn(view: View) {
-        onBackPressed()
+        val lkIntent = Intent(this, LkActivity::class.java)
+        startActivity(lkIntent)
     }
 }

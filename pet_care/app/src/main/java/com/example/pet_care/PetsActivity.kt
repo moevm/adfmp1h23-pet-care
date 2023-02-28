@@ -12,7 +12,8 @@ class PetsActivity : AppCompatActivity() {
     }
 
     fun movePage(view: View) {
-        onBackPressed()
+        val lkIntent = Intent(this, LkActivity::class.java)
+        startActivity(lkIntent)
     }
 
     fun goToPetProfile(view: View){
