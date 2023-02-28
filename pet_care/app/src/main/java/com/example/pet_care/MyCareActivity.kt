@@ -12,8 +12,7 @@ class MyCareActivity : AppCompatActivity() {
     }
 
     fun clickReturn(view: View) {
-        val lkIntent = Intent(this, LkActivity::class.java)
-        startActivity(lkIntent)
+        finish()
     }
 
     fun movePage(view: View) {

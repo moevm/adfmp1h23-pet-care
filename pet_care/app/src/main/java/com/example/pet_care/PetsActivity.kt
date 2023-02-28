@@ -12,8 +12,7 @@ class PetsActivity : AppCompatActivity() {
     }
 
     fun movePage(view: View) {
-        val lkIntent = Intent(this, LkActivity::class.java)
-        startActivity(lkIntent)
+        finish()
     }
 
     fun goToPetProfile(view: View){
