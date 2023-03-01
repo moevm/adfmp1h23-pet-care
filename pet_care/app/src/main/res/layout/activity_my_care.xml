@@ -2,10 +2,20 @@
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/root"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MyCareActivity">
+
+    <ImageButton
+        android:id="@+id/settings2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:onClick="showDialog"
+        app:layout_constraintStart_toEndOf="@+id/searchView"
+        app:layout_constraintTop_toTopOf="@+id/searchView"
+        app:srcCompat="@drawable/setings"
+        tools:ignore="SpeakableTextPresentCheck" />
 
     <ImageView
         android:id="@+id/imgBack2"
@@ -75,12 +85,13 @@
 
     <SearchView
         android:id="@+id/searchView"
-        android:layout_width="368dp"
-        android:layout_height="49dp"
-        android:layout_marginTop="10dp"
+        android:layout_width="324dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
         android:background="@color/light_gray"
         android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleMyCare" />
 

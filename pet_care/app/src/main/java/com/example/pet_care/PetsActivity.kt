@@ -1,9 +1,12 @@
 package com.example.pet_care
 
+
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import android.widget.ListView
+import androidx.appcompat.app.AppCompatActivity
+
 
 class PetsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -39,5 +42,10 @@ class PetsActivity : AppCompatActivity() {
             }
         }
 
+    }
+
+    fun showDialog(v: View?) {
+        val dialog = CustomDialogFragment()
+        dialog.show(supportFragmentManager, "custom")
     }
 }
