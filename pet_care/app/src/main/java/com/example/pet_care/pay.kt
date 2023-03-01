@@ -6,9 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
-import android.widget.Toast
-import com.example.pet_care.LkActivity.Companion.name
-import com.example.pet_care.LkActivity.Companion.sername
+
 
 class pay : AppCompatActivity() {
 
