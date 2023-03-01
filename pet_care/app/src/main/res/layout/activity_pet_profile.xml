@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetProfileActivity">
+
+    <ImageView
+        android:id="@+id/pet_photo"
+        android:layout_width="411dp"
+        android:layout_height="276dp"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/return_entry4"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@android:string/no"
+        android:onClick="clickReturn"
+        android:paddingStart="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="?attr/actionModeCloseDrawable"
+        app:tint="@color/black"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/butFavorite"
+        android:layout_width="80dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/white"
+        android:contentDescription="@android:string/no"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/favorite_icon"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <Button
+        android:id="@+id/donat"
+        android:layout_width="135dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/asap_bold"
+        android:onClick="goToPay"
+        android:text="Донат"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/pay_care"
+        android:layout_width="230dp"
+        android:layout_height="64dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/asap_bold"
+        android:onClick="goToPay"
+        android:text="Опека на пол года"
+        android:textColor="@color/white"
+        android:textSize="17sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/donat" />
+
+    <TextView
+        android:id="@+id/pet_name"
+        android:layout_width="411dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:textAlignment="center"
+        android:textColor="@color/darck_blue"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_photo" />
+
+    <TextView
+        android:id="@+id/about_pet"
+        android:layout_width="411dp"
+        android:layout_height="90dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/darck_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pet_name" />
+
+    <TextView
+        android:id="@+id/more_info"
+        android:layout_width="411dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/darck_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/about_pet" />
+
+    <TextView
+        android:id="@+id/about_care"
+        android:layout_width="411dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="8dp"
+        android:paddingStart="15dp"
+        android:paddingEnd="10dp"
+        android:textColor="@color/darck_blue"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/more_info" />
+</androidx.constraintlayout.widget.ConstraintLayout>
