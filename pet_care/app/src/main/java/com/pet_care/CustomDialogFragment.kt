@@ -1,9 +1,10 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.app.AlertDialog
 import android.app.Dialog
 import android.os.Bundle
 import androidx.fragment.app.DialogFragment
+import com.pet_care.R
 
 
 class CustomDialogFragment : DialogFragment() {

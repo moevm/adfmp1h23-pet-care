@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,8 @@ import android.view.View
 import android.widget.EditText
 import android.widget.ImageButton
 import android.widget.ImageView
+import com.pet_care.MainActivity
+import com.pet_care.R
 
 class AboutActivity : AppCompatActivity() {
 

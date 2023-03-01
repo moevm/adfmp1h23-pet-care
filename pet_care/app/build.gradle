@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.pet_care'
+    namespace 'com.pet_care'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.pet_care"
+        applicationId "com.pet_care"
         minSdk 30
         targetSdk 33
         versionCode 1

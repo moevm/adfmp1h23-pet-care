@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4

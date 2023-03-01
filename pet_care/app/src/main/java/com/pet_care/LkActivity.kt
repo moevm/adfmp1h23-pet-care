@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.annotation.SuppressLint
 import android.content.Intent

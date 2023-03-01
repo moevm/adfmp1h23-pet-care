@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity

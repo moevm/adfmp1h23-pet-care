@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 
 import android.content.Intent
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
+import com.pet_care.R
 
 
 class PetsActivity : AppCompatActivity() {

@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import org.junit.Test
 

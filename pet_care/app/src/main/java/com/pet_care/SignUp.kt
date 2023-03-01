@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.content.Intent
 import android.graphics.BitmapFactory
@@ -9,6 +9,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import com.pet_care.R
 import java.io.FileNotFoundException
 import java.io.InputStream
 

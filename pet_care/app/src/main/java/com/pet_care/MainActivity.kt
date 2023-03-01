@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -7,6 +7,7 @@ import android.view.View
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import com.pet_care.R
 
 class MainActivity : AppCompatActivity() {
     private lateinit var email_input: EditText

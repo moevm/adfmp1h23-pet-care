@@ -1,4 +1,4 @@
-package com.example.pet_care
+package com.pet_care
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import com.pet_care.R
 
 
 class pay : AppCompatActivity() {
