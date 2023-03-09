@@ -163,7 +163,7 @@
         android:id="@+id/home_page"
         android:layout_width="205dp"
         android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="2dp"
         android:background="@color/light_gray"
         android:fontFamily="@font/quicksand_bold"
         android:paddingHorizontal="10dp"
@@ -172,14 +172,14 @@
         android:textAlignment="center"
         android:textColor="@color/darck_blue"
         android:textSize="20sp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay_story" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/home_page2"
         android:layout_width="205dp"
         android:layout_height="60dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginBottom="2dp"
         android:fontFamily="@font/quicksand_bold"
         android:onClick="movePage"
         android:paddingHorizontal="10dp"
@@ -188,35 +188,35 @@
         android:textAlignment="center"
         android:textColor="@color/darck_blue"
         android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/pay_story" />
+        app:layout_constraintStart_toEndOf="@+id/home_page" />
 
     <Button
         android:id="@+id/exit_lk"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
         android:backgroundTint="@color/white"
         android:fontFamily="@font/quicksand_light"
         android:onClick="exitLk"
         android:text="Выйти"
         android:textColor="@color/gray"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/home_page" />
+        app:layout_constraintTop_toBottomOf="@+id/pay_story" />
 
     <Button
         android:id="@+id/photo_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
         android:backgroundTint="@color/darck_blue"
         android:onClick="clickFoto"
         android:text="Сменить аву"
         android:textSize="10sp"
-        app:layout_constraintEnd_toStartOf="@+id/exit_lk"
-        app:layout_constraintTop_toBottomOf="@+id/home_page" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pay_story" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
