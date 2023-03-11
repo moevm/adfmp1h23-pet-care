@@ -76,7 +76,7 @@
     <SearchView
         android:id="@+id/searchView"
         android:layout_width="368dp"
-        android:layout_height="49dp"
+        android:layout_height="50dp"
         android:layout_marginTop="10dp"
         android:background="@color/light_gray"
         android:textAlignment="center"
@@ -84,73 +84,15 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/isDonat" />
 
-    <TextView
-        android:id="@+id/info1"
+    <TableLayout
+        android:id="@+id/listTrans"
         android:layout_width="368dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:text="Опека над дикобразом Жорой от 25.01.2023 на сумму 18 000 руб."
-        android:textColor="@color/darck_blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:textAlignment="center"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/searchView" />
-
-    <View
-        android:id="@+id/view5"
-        android:layout_width="368dp"
-        android:layout_height="4dp"
-        android:layout_marginTop="8dp"
-        android:background="#EBEBEB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/info1" />
-
-    <TextView
-        android:id="@+id/info2"
-        android:layout_width="368dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Донат филину Степану от 12.01.2023 на сумму 1 000 руб."
-        android:textColor="@color/darck_blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5" />
-
-    <View
-        android:id="@+id/view6"
-        android:layout_width="368dp"
-        android:layout_height="4dp"
-        android:layout_marginTop="8dp"
-        android:background="#EBEBEB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/info2" />
-
-    <TextView
-        android:id="@+id/info3"
-        android:layout_width="368dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="20dp"
-        android:text="Донат фенеку Графу от 12.01.2023 на сумму 2 000 руб."
-        android:textColor="@color/darck_blue"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view6" />
-
-    <View
-        android:id="@+id/view7"
-        android:layout_width="368dp"
-        android:layout_height="4dp"
-        android:layout_marginTop="8dp"
-        android:background="#EBEBEB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/info3" />
+        app:layout_constraintTop_toBottomOf="@+id/searchView">
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
