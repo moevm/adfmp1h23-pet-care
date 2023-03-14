@@ -32,19 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/view9"
-        android:layout_width="368dp"
-        android:layout_height="4dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:background="#EBEBEB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petCare6" />
-
     <ImageButton
         android:id="@+id/return_entry3"
         android:layout_width="80dp"
@@ -61,18 +48,6 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <View
-        android:id="@+id/view5"
-        android:layout_width="368dp"
-        android:layout_height="4dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="10dp"
-        android:background="#EBEBEB"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petCare" />
-
-    <View
         android:id="@+id/view7"
         android:layout_width="368dp"
         android:layout_height="4dp"
@@ -84,227 +59,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titleFavorite" />
 
-
-    <ImageView
-        android:id="@+id/petIcon"
-        android:layout_width="91dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleFavorite"
-        app:srcCompat="@drawable/pet_icon" />
-
-    <TextView
-        android:id="@+id/petCare"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:text="Опека до 25.07.2023"
-        android:textColor="@color/darck_blue"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon"
-        app:layout_constraintTop_toBottomOf="@+id/petAge" />
-
-    <TextView
-        android:id="@+id/petAge"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:text="Возраст: 4 года"
-        android:textColor="@color/darck_blue"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon"
-        app:layout_constraintTop_toBottomOf="@+id/petName" />
-
-    <TextView
-        android:id="@+id/petName"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:text="Дикобраз Жора"
-        android:textColor="@color/darck_blue"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon"
-        app:layout_constraintTop_toBottomOf="@+id/titleFavorite" />
-
-    <TextView
-        android:id="@+id/go_to5"
-        android:layout_width="372dp"
-        android:layout_height="103dp"
-        android:contentDescription="@android:string/no"
-        android:onClick="goToPetProfile"
-        app:layout_constraintBottom_toBottomOf="@+id/petCare"
-        app:layout_constraintEnd_toEndOf="@+id/petAge"
-        app:layout_constraintStart_toStartOf="@+id/petIcon"
-        app:layout_constraintTop_toTopOf="@+id/petName" />
-
-    <ImageButton
-        android:id="@+id/butDel1"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@android:string/no"
-        app:layout_constraintEnd_toEndOf="@+id/petAge"
-        app:layout_constraintTop_toTopOf="@+id/petName"
-        app:srcCompat="@drawable/del_icon" />
-
-    <TextView
-        android:id="@+id/petAge6"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:text="Возраст: 1 год"
-        android:textColor="@color/darck_blue"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon6"
-        app:layout_constraintTop_toBottomOf="@+id/petName6" />
-
-    <ImageView
-        android:id="@+id/petIcon6"
-        android:layout_width="91dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view5"
-        app:srcCompat="@drawable/pet_icon" />
-
-    <TextView
-        android:id="@+id/petCare6"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:text="Опекун: Отсутствует"
-        android:textColor="@color/darck_blue"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon6"
-        app:layout_constraintTop_toBottomOf="@+id/petAge6" />
-
-    <TextView
-        android:id="@+id/petName6"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:text="Филин Степан"
-        android:textColor="@color/darck_blue"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon6"
-        app:layout_constraintTop_toBottomOf="@+id/view5" />
-
-    <TextView
-        android:id="@+id/go_to6"
-        android:layout_width="372dp"
-        android:layout_height="103dp"
-        android:contentDescription="@android:string/no"
-        android:onClick="goToPetProfile"
-        app:layout_constraintBottom_toBottomOf="@+id/petCare6"
-        app:layout_constraintEnd_toEndOf="@+id/petAge6"
-        app:layout_constraintStart_toStartOf="@+id/petIcon6"
-        app:layout_constraintTop_toTopOf="@+id/petName6" />
-
-    <ImageButton
-        android:id="@+id/butDel"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@android:string/no"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/petName6"
-        app:srcCompat="@drawable/del_icon" />
-
-    <TextView
-        android:id="@+id/petAge8"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:text="Возраст: 3 года"
-        android:textColor="@color/darck_blue"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon8"
-        app:layout_constraintTop_toBottomOf="@+id/petName8" />
-
-    <ImageView
-        android:id="@+id/petIcon8"
-        android:layout_width="91dp"
-        android:layout_height="91dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="30dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view9"
-        app:srcCompat="@drawable/pet_icon" />
-
-    <TextView
-        android:id="@+id/petCare8"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:text="Опекун: Евгений Игнашев"
-        android:textColor="@color/darck_blue"
-        android:textSize="14sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon8"
-        app:layout_constraintTop_toBottomOf="@+id/petAge8" />
-
-    <TextView
-        android:id="@+id/petName8"
-        android:layout_width="264dp"
-        android:layout_height="31dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="30dp"
-        android:text="Фенек Граф"
-        android:textColor="@color/darck_blue"
-        android:textSize="18sp"
-        android:textStyle="bold"
-        app:layout_constraintStart_toEndOf="@+id/petIcon8"
-        app:layout_constraintTop_toBottomOf="@+id/view9" />
-
-    <TextView
-        android:id="@+id/go_to7"
-        android:layout_width="372dp"
-        android:layout_height="103dp"
-        android:contentDescription="@android:string/no"
-        android:onClick="goToPetProfile"
-        app:layout_constraintBottom_toBottomOf="@+id/petCare8"
-        app:layout_constraintEnd_toEndOf="@+id/petAge8"
-        app:layout_constraintStart_toStartOf="@+id/petIcon8"
-        app:layout_constraintTop_toTopOf="@+id/petName8" />
-
-    <ImageButton
-        android:id="@+id/butDel2"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="20dp"
-        android:backgroundTint="@color/white"
-        android:contentDescription="@android:string/no"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/petName8"
-        app:srcCompat="@drawable/del_icon" />
-
-    <View
-        android:id="@+id/view11"
+    <TableLayout
+        android:id="@+id/listFav"
         android:layout_width="368dp"
-        android:layout_height="4dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
-        android:background="#EBEBEB"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.956"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/petCare8" />
+        app:layout_constraintTop_toBottomOf="@+id/titleFavorite">
+
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
