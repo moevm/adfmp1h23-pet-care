@@ -5,6 +5,9 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.content.Intent
+import android.view.View
+import java.text.SimpleDateFormat
+import java.util.*
 
 
 class pay : AppCompatActivity() {
@@ -14,6 +17,8 @@ class pay : AppCompatActivity() {
 
     companion object{
         const val price = "price"
+        const val name = "name"
+        const val type = "type"
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,10 +35,13 @@ class pay : AppCompatActivity() {
         }
     }
 
-//    fun clickPay(view: View) {
-//        val money = summ.text.toString()
-//        val lkIntent = Intent(this, LkActivity::class.java)
-//        lkIntent.putExtra(LkActivity.money, money)
-//        startActivity(lkIntent)
-//    }
+    fun clickPay(view: View) {
+        val money = summ.text.toString()
+        val name: String = intent.getStringExtra(name)?: "null"
+        val type: String = intent.getStringExtra(type)?: "null"
+        val sdf = SimpleDateFormat("dd.MM.yyyy")
+        val curDate = sdf.format(Date())
+        transactions.add(0,"$type $name от $curDate на сумму $money руб.")
+        finish()
+    }
 }

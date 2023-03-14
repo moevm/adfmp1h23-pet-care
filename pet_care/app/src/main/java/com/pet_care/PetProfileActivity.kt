@@ -85,7 +85,12 @@ class PetProfileActivity : AppCompatActivity() {
         val payIntent = Intent(this, pay::class.java)
         if(view.id == pay_care.id){
             payIntent.putExtra(pay.price, pet[4])
+            payIntent.putExtra(pay.type, "Опека над")
         }
+        else{
+            payIntent.putExtra(pay.type, "Донат")
+        }
+        payIntent.putExtra(pay.name, pet[0])
         startActivity(payIntent)
     }
 

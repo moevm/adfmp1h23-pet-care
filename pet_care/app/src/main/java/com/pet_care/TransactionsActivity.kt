@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 
 
-var transactions: Array<String> = arrayOf(
+var transactions: MutableList<String> = mutableListOf(
     "Опека над дикобразом Жорой от 25.01.2023 на сумму 18000 руб.",
     "Донат филину Степану от 12.01.2023 на сумму 1000 руб.",
     "Донат фенеку Графу от 12.01.2023 на сумму 2000 руб."
