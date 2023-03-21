@@ -5,28 +5,22 @@ import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.ImageButton
-import android.widget.ImageView
-import android.widget.TableLayout
-import android.widget.TableRow
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.core.content.ContextCompat
-import com.pet_care.R
 
 var favorites: MutableList<Array<String>> = mutableListOf(
     arrayOf(
-        "Дикобраз Жора\n\n",
+        "Дикобраз Жора\n",
         "Возраст: 4 года\n",
         "Опека до 25.07.2023"
         ),
     arrayOf(
-        "Филин Степан\n\n",
+        "Филин Степан\n",
         "Возраст: 1 год\n",
         "Опекун: Отсутствует"
     ),
     arrayOf(
-        "Фенек Граф\n\n",
+        "Фенек Граф\n",
         "Возраст: 3 года\n",
         "Опекун: Евгений Игнашев"
     )
@@ -46,10 +40,14 @@ class FavoriteActivity : AppCompatActivity() {
             var but = ImageButton(this)
             icon.setImageResource(R.drawable.pet_icon)
             but.setImageResource(R.drawable.del_icon)
+            but.backgroundTintList = this.getColorStateList(R.color.white)
             textView.textSize = 18F
+            textView.lineHeight = 90
+            textView.setPadding(10,10,0,10)
             textView.setTextColor(ContextCompat.getColor(this,R.color.darck_blue))
             textView.setTypeface(null, Typeface.BOLD);
             textView.text = i[0]+i[1]+i[2]
+            tableRow.setPadding(0,10,0,10)
             tableRow.addView(icon)
             tableRow.addView(textView)
             tableRow.addView(but)
