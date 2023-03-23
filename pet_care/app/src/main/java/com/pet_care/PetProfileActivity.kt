@@ -16,6 +16,7 @@ class PetProfileActivity : AppCompatActivity() {
     private lateinit var about_care: TextView
     private lateinit var pay_care: Button
     private lateinit var pet_photo: ImageView
+    private lateinit var but: ImageButton
     private var isFavorite: Boolean = false
 
     private var pets: Array<Array<String>> = arrayOf(
@@ -62,6 +63,7 @@ class PetProfileActivity : AppCompatActivity() {
         more_info = findViewById(R.id.more_info)
         about_care = findViewById(R.id.about_care)
         pay_care = findViewById(R.id.pay_care)
+        but = findViewById(R.id.butFavorite)
         setPage()
     }
 
@@ -79,10 +81,18 @@ class PetProfileActivity : AppCompatActivity() {
         more_info.setText(pet[2])
         about_care.setText(pet[3])
         pay_care.setText("Опека на пол года "+pet[4]+" руб.")
+
+        for (i in favorites){
+            val str: String = i[0].substringBefore("\n")
+            if(str==pet[0]){
+                isFavorite = true
+                but.setImageResource(R.drawable.is_favorite_icon)
+                break
+            }
+        }
     }
 
     fun clickFav(view: View){
-        var but: ImageButton = findViewById(R.id.butFavorite)
         if(isFavorite){
             isFavorite = false
             but.setImageResource(R.drawable.favorite_icon)
