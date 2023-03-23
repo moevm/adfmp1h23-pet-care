@@ -3,6 +3,7 @@ package com.pet_care
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.KeyEvent
 import android.view.View
 import android.widget.EditText
 import android.widget.TextView
@@ -23,8 +24,20 @@ class MainActivity : AppCompatActivity() {
         password_input = findViewById(R.id.password_input)
         about_button = findViewById(R.id.about)
         signup_button = findViewById(R.id.signin_button)
+
+        password_input.setOnKeyListener(object : View.OnKeyListener {
+            override fun onKey(v: View?, keyCode: Int, event: KeyEvent): Boolean {
+                // if the event is a key down event on the enter button
+                if (event.action == KeyEvent.ACTION_DOWN && keyCode == KeyEvent.KEYCODE_ENTER) {
+                    // perform action on key press
+                    clickEntry()
+                    return true
+                }
+                return false
+            }
+        })
     }
-    fun clickEntry(view: View) {
+    fun clickEntry() {
         val email = email_input.text.toString()
         val password = password_input.text.toString()
         if (email == "fenya@mail.ru" && password == "good") {
