@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -15,6 +16,7 @@ class PetProfileActivity : AppCompatActivity() {
     private lateinit var about_care: TextView
     private lateinit var pay_care: Button
     private lateinit var pet_photo: ImageView
+    private var isFavorite: Boolean = false
 
     private var pets: Array<Array<String>> = arrayOf(
         arrayOf(
@@ -77,6 +79,18 @@ class PetProfileActivity : AppCompatActivity() {
         more_info.setText(pet[2])
         about_care.setText(pet[3])
         pay_care.setText("Опека на пол года "+pet[4]+" руб.")
+    }
+
+    fun clickFav(view: View){
+        var but: ImageButton = findViewById(R.id.butFavorite)
+        if(isFavorite){
+            isFavorite = false
+            but.setImageResource(R.drawable.favorite_icon)
+        }
+        else{
+            isFavorite = true
+            but.setImageResource(R.drawable.is_favorite_icon)
+        }
     }
 
     fun goToPay(view: View){
