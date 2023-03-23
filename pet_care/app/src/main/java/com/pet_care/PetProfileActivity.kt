@@ -18,6 +18,7 @@ class PetProfileActivity : AppCompatActivity() {
     private lateinit var pet_photo: ImageView
     private lateinit var but: ImageButton
     private var isFavorite: Boolean = false
+    private var indexFavoriteList: Int = 0
 
     private var pets: Array<Array<String>> = arrayOf(
         arrayOf(
@@ -89,6 +90,7 @@ class PetProfileActivity : AppCompatActivity() {
                 but.setImageResource(R.drawable.is_favorite_icon)
                 break
             }
+            indexFavoriteList += 1
         }
     }
 
@@ -96,10 +98,16 @@ class PetProfileActivity : AppCompatActivity() {
         if(isFavorite){
             isFavorite = false
             but.setImageResource(R.drawable.favorite_icon)
+            favorites.removeAt(indexFavoriteList)
         }
         else{
             isFavorite = true
             but.setImageResource(R.drawable.is_favorite_icon)
+            favorites.add(arrayOf(
+                pet_name.text.toString()+"\n\n",
+                about_pet.text.toString().substringBefore('.')+"\n",
+                "Опекун: ..."
+            ))
         }
     }
 
