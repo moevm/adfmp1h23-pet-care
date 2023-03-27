@@ -37,6 +37,7 @@ class LkActivity : AppCompatActivity() {
         foto = findViewById(R.id.photo_button)
         showName()
     }
+	//Добавили кнопку смены аватара
     fun clickFoto(view: View) {
         val fotoIntent = Intent(Intent.ACTION_PICK)
         //Тип получаемых объектов - image:
