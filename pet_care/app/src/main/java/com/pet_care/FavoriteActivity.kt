@@ -38,7 +38,8 @@ class FavoriteActivity : AppCompatActivity() {
             var textView = TextView(this)
             var icon = ImageView(this)
             var but = ImageButton(this)
-            icon.setImageResource(R.drawable.pet_icon)
+            icon.setImageResource(R.drawable.pet_icon_min)
+
             but.setImageResource(R.drawable.del_icon)
             but.backgroundTintList = this.getColorStateList(R.color.white)
             textView.textSize = 18F
